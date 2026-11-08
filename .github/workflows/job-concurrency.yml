@@ -29,7 +29,7 @@ jobs:
   deploy:
     concurrency: 
        group: prod-deploy
-       cancel-in-progress: true
+       cancel-in-progress: false
     needs: docker
     runs-on: ubuntu-latest
     steps:
